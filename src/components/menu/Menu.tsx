@@ -15,6 +15,7 @@ export const Menu = () => {
 };
 
 const StyledMenu = styled.nav`
+  font-family: Magnolia, sans-serif;
   ul{
     display: flex;
     gap: 30px;

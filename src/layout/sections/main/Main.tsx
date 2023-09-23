@@ -1,22 +1,32 @@
 import React from 'react';
 import styled from "styled-components";
 import {Container} from "../../../components/container/Container";
+import prev from "../../../assets/images/different/teacher_prev.webp"
 
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <h2>Привет Ученик!</h2>
+                <MainTitle>Зравствуй Ученик!</MainTitle>
             </Container>
         </StyledMain>
     );
 };
 
 const StyledMain = styled.section`
-  background-color: #c1f6b5;
-  ${Container}{
+  background-color: #1f1f1f;
+
+  ${Container} {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    background-image: url(${prev});
+    background-repeat: no-repeat;
+    height: 65vh;
+    
   }
+`
+const MainTitle = styled.h2`
+  color: #CDAA7D;
+  font-family: Vazitsa, sans-serif;
+font-size: 30px;
 `
