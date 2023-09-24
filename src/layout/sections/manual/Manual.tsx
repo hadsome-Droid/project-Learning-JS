@@ -197,7 +197,7 @@ export const Manual = () => {
 
 const StyledSetGit = styled.section`
   background-color: #1f1f1f;
-
+  padding-bottom: 50px;
   ${Container} {
     display: flex;
     flex-direction: column;

@@ -21,6 +21,7 @@ const StyledMain = styled.section`
     justify-content: center;
     background-image: url(${prev});
     background-repeat: no-repeat;
+    background-size: cover;
     height: 65vh;
     
   }
