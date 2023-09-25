@@ -23,6 +23,7 @@ const StyledMain = styled.section`
     background-repeat: no-repeat;
     background-size: cover;
     height: 65vh;
+    padding-top: 10px;
     
   }
 `

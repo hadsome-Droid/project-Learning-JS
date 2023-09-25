@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
+import {theme} from "../../styles/Theme";
 
 export const Menu = () => {
     return (
@@ -15,9 +16,13 @@ export const Menu = () => {
 };
 
 const StyledMenu = styled.nav`
-  font-family: Magnolia, sans-serif;
+
   ul{
     display: flex;
     gap: 30px;
+  }
+  
+  @media ${theme.media.tablet} {
+    display: none;
   }
 `
