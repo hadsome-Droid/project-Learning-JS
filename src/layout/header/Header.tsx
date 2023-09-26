@@ -15,11 +15,14 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
+  position: fixed;
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   background-color: #111111;
   color: #CDAA7D;
-  
+
 `

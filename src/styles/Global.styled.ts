@@ -55,4 +55,10 @@ export const GlobalStyled = createGlobalStyle`
     background-color: #1f1f1f;
     
   }
+  button{
+    background-color: unset;
+    border: none;
+    cursor: pointer;
+  }
+  
 `

@@ -15,7 +15,8 @@ export const Main = () => {
 
 const StyledMain = styled.section`
   background-color: #1f1f1f;
-
+  padding-top: 66px;
+  
   ${Container} {
     display: flex;
     justify-content: center;
