@@ -7,7 +7,7 @@ export const Menu = () => {
         <StyledMenu>
             <ul>
                 <li>Пункт меню 1</li>
-                <li>Пункт меню 2</li>
+                <li>ДЗ/HomeWork</li>
                 <li>Пункт меню 3</li>
                 <li>Пункт меню 4</li>
             </ul>

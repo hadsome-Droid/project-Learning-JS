@@ -20,10 +20,8 @@ export const MobileMenu = () => {
             }}>
                 <ul>
                     <ListItem>Пункт меню 1</ListItem>
-                    {/*<PopupIcon>*/}
-                    {/*    <img src={angel} alt=""/>*/}
-                    {/*</PopupIcon>*/}
-                    <ListItem>Пункт меню 2</ListItem>
+
+                    <ListItem>ДЗ/HomeWork</ListItem>
 
                     <ListItem>Пункт меню 3</ListItem>
 
@@ -72,20 +70,43 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
 `
 
 const ListItem = styled.li`
+  display: block;
+  position: relative;
+
+  &:before {
+    content: '';
     display: block;
-    position: relative;
-  
-    &:after{
-      content: '';
-      display: block;
-      width: 20px;
-      height: 20px;
-      background-image: url(${angel});
-      position: absolute;
-      bottom: -30px;
-      left: 65px;
-      z-index: 99999;
-    }
+    width: 157px;
+    height: 2px;
+    background-color: ${theme.color.fontSecondary};
+    position: absolute;
+    bottom: -4px;
+    left: 3px;
+    z-index: 99999
+  }
+  // &:after {
+  //   content: '';
+  //   display: block;
+  //   width: 8px;
+  //   height: 8px;
+  //   border-radius: 50%;
+  //   background-color: ${theme.color.fontSecondary};
+  //   position: absolute;
+  //   bottom: -7px;
+  //   left: 78px;
+  //   z-index: 99999;
+  // }
+  &:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: ${theme.color.fontSecondary};
+    position: absolute;
+    bottom: -10px;
+    left: 31px;
+    z-index: 99999;
+  }
 `
 
 const BurgerButton = styled.button<{isOpen: boolean}>`

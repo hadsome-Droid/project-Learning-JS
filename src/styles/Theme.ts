@@ -5,7 +5,8 @@ export const theme = {
         accent: '',
 
         fontPrimary: '#7a90ef',
-        fontSecondary: '#CDAA7D'
+        fontSecondary: '#CDAA7D',
+        fontAccent: '#b04c3c'
     },
 
     media: {
