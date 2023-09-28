@@ -7,6 +7,7 @@ import VezitsaCyrillicTtf from '../assets/fonts/vezitsacyrillic.ttf'
 import MagnoliaScriptEot from '../assets/fonts/Magnolia-Script.eot'
 import MagnoliaScriptWoff from '../assets/fonts/Magnolia-Script.ttf'
 import MagnoliaScriptTtf from '../assets/fonts/Magnolia-Script.woff2'
+import {theme} from "./Theme";
 
 export const GlobalStyled = createGlobalStyle`
   @font-face {
@@ -53,7 +54,7 @@ export const GlobalStyled = createGlobalStyle`
   
   section{
     background-color: #1f1f1f;
-    
+   
   }
   button{
     background-color: unset;

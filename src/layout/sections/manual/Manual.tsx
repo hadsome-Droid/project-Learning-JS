@@ -216,6 +216,10 @@ const StyledSetGit = styled.section`
   h4 {
     color: #b04c3c;
   }
+
+  @media ${theme.media.tablet}{
+    padding: 0 20px;
+  }
 `
 const ImgWrapper = styled.div`
   max-width: 925px;
