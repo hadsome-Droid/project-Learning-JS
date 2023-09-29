@@ -20,15 +20,17 @@ export const Title = (props: TitlePropsType) => {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   gap: 5px;
 
    h3 {
      font-family: Vazitsa, sans-serif;
+     font-size: 25px;
      color: #CDAA7D;
    }
  `
 const ImageWrapper = styled.div`
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   img{
     width: 100%;
     height: 100%;

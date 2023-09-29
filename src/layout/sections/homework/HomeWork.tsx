@@ -11,18 +11,21 @@ const homeWorkItem = [
         itemId: '1',
         itemInfo: 'Создай массив из пяти елементов с типом данных string!',
         itemName: 'func1',
+        isFunc: false
 
     },
     {
         itemId: '2',
         itemInfo: 'Создай массив из трёх елементов с типом данных number!',
         itemName: 'func2',
+        isFunc: false
 
     },
     {
         itemId: '3',
         itemInfo: 'Создай массив из десяти елементов с типом данных string, number, boolean!',
         itemName: 'func3',
+        isFunc: false
 
     },
 
@@ -33,11 +36,12 @@ export const HomeWork = () => {
         <StyledHomeWork>
             <Container>
                 <Title title={'Домашние задание'}/>
-                <FlexWrapper items={'center'} content={'space-around'} >
+                <FlexWrapper items={'center'} content={'space-around'}>
 
-                    {homeWorkItem.map((h) =>{
-                        return(
-                            <Task nameFuncTask={h.itemName} taskDescription={h.itemInfo} taskNumber={h.itemId}/>
+                    {homeWorkItem.map((h) => {
+                        return (
+                            <Task nameFuncTask={h.itemName} taskDescription={h.itemInfo} taskNumber={h.itemId}
+                                  isFunc={h.isFunc}/>
                         )
                     })}
                 </FlexWrapper>
@@ -48,14 +52,16 @@ export const HomeWork = () => {
 };
 
 const StyledHomeWork = styled.section`
-  
-  
-  
-  p {
-    color: ${theme.color.fontPrimary};
+
+  ${Container}{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+    
   }
 
-  @media ${theme.media.tablet}{
+  @media ${theme.media.tablet} {
     padding: 0 20px;
   }
 `
