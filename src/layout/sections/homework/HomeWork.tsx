@@ -36,7 +36,7 @@ export const HomeWork = () => {
         <StyledHomeWork>
             <Container>
                 <Title title={'Домашние задание'}/>
-                <FlexWrapper items={'center'} content={'space-around'}>
+                <FlexWrapper items={'center'} content={'space-around'} wrap={'wrap'} gap={'20px'}>
 
                     {homeWorkItem.map((h) => {
                         return (
@@ -52,12 +52,12 @@ export const HomeWork = () => {
 };
 
 const StyledHomeWork = styled.section`
-
+  
   ${Container}{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-top: 30px;
+    padding: 30px 0;
     
   }
 
