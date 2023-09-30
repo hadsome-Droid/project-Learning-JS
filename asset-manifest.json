@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/project-Learning-JS/static/css/main.31d6cfe0.css",
-    "main.js": "/project-Learning-JS/static/js/main.e56462ed.js",
+    "main.js": "/project-Learning-JS/static/js/main.44d300bf.js",
     "static/js/787.25eaef86.chunk.js": "/project-Learning-JS/static/js/787.25eaef86.chunk.js",
     "static/media/Magnolia-Script.eot": "/project-Learning-JS/static/media/Magnolia-Script.551a8792951e951472f3.eot",
     "static/media/Magnolia-Script.ttf": "/project-Learning-JS/static/media/Magnolia-Script.5035bd6cbf723762aaac.ttf",
@@ -31,11 +31,11 @@
     "static/media/react.svg": "/project-Learning-JS/static/media/react.e0e2c834090ce4625a47a86c08903f01.svg",
     "index.html": "/project-Learning-JS/index.html",
     "static/media/fire-symbol-svgrepo-com.svg": "/project-Learning-JS/static/media/fire-symbol-svgrepo-com.53e6e09200cf25325c69c99e9f87a642.svg",
-    "main.e56462ed.js.map": "/project-Learning-JS/static/js/main.e56462ed.js.map",
+    "main.44d300bf.js.map": "/project-Learning-JS/static/js/main.44d300bf.js.map",
     "787.25eaef86.chunk.js.map": "/project-Learning-JS/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.e56462ed.js"
+    "static/js/main.44d300bf.js"
   ]
 }
