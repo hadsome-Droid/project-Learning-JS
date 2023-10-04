@@ -40,8 +40,8 @@ const StyledTask = styled.div`
   gap: 10px;
   max-width: 300px;
   width: 100%;
-  height: 300px;
-  padding: 20px 10px 0 10px;
+  min-height: 300px;
+  padding: 20px 10px 10px 10px;
   border: 10px double #57422c;
   border-radius: 20px;
 

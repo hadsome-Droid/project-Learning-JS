@@ -28,6 +28,35 @@ const homeWorkItem = [
         isFunc: false
 
     },
+    {
+        itemId: '4',
+        itemInfo: 'Дана функция которая принемает в параметрах какую-то строку, Задача: функция должна преобразовать эту строку в массив!',
+        itemName: 'setArr',
+        funcData: 'Чижик-пыжик где ты был!?',
+        funcParam: 'str',
+        correctResult: '[ \'Чижик-пыжик\', \'где\', \'ты\', \'был!?\' ]',
+        isFunc: true
+
+    },
+    {
+        itemId: '5',
+        itemInfo: 'Дана функция которая принемает в параметрах два параметра, Задача: функция должна вернуть новый массив который будет включать в себя значения этих двух параметров!',
+        itemName: 'conArr',
+        isFunc: true,
+        funcData: '[\'one\', \'two\', \'three\'], [1, 2, 3]',
+        funcParam: 'a, b',
+        correctResult: '[ \'one\', \'two\', \'three\', 1, 2, 3 ]',
+    },
+    {
+        itemId: '6',
+        itemInfo: 'Дана функция которая принемает в параметрах какую-то строку, Задача: Преобразуй страку в массив  в котором каждый НЕ ЧЁТНЫЙ элемент переведен в заглавные буквы!',
+        itemName: 'upFunc',
+        isFunc: true,
+        funcData: 'one two three four five',
+        funcParam: 'str',
+        correctResult: '[ \'ONE\', \'two\', \'THREE\', \'four\', \'FIVE\' ]',
+
+    },
 
 ]
 
@@ -41,7 +70,10 @@ export const HomeWork = () => {
                     {homeWorkItem.map((h) => {
                         return (
                             <Task nameFuncTask={h.itemName} taskDescription={h.itemInfo} taskNumber={h.itemId}
-                                  isFunc={h.isFunc}/>
+                                  isFunc={h.isFunc}
+                            funcData={h.funcData}
+                            funcParam={h.funcParam}
+                            correctResultTusk={h.correctResult}/>
                         )
                     })}
                 </FlexWrapper>
