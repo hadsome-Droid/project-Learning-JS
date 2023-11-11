@@ -7,7 +7,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <MainTitle>Зравствуй Ученик!</MainTitle>
+                <MainTitle>Зравствуй Ученик! <span>Добро пожаловать в Школу Золотые Руки!</span> </MainTitle>
             </Container>
         </StyledMain>
     );
@@ -23,13 +23,21 @@ const StyledMain = styled.section`
     background-image: url(${prev});
     background-repeat: no-repeat;
     background-size: cover;
-    height: 65vh;
+    height: 94vh;
     padding-top: 10px;
     
   }
 `
 const MainTitle = styled.h2`
+  display: inline-block;
+  width: 700px;
   color: #CDAA7D;
   font-family: Vazitsa, sans-serif;
 font-size: 30px;
+  text-align: center;
+  
+  
+  & span {
+    display: inline-block;
+  }
 `

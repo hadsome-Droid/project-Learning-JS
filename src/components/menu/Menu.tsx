@@ -18,10 +18,14 @@ export const Menu = () => {
                 </li>
                 <li>
                     <NavLink to={'/manual'}>
-                      Мануал
+                      Гайд по Гиту
                     </NavLink>
                 </li>
-                <li>Пункт меню 4</li>
+                <li>
+                    <NavLink to={'/classroom'}>
+                        Учебный Класс
+                    </NavLink>
+                </li>
             </ul>
         </StyledMenu>
     );

@@ -8,7 +8,6 @@ import {Task} from "../../../components/task/Task";
 import {homeWorkState} from "../../../data/dataState";
 
 
-
 export const HomeWork = () => {
     return (
         <StyledHomeWork>
@@ -18,28 +17,31 @@ export const HomeWork = () => {
 
                     {homeWorkState.map((h) => {
                         return (
-                            <Task nameFuncTask={h.nameTask} taskDescription={h.infoTask} taskNumber={h.id}
-                                  isFunc={h.isFunc}
-                                  funcData={h.funcData}
-                                  funcParam={h.funcParam}
-                                  correctResultTusk={h.correctResult}/>
+                            <Task
+                                key={h.id}
+                                taskNumber={h.id}
+                                nameFuncTask={h.nameTask}
+                                taskDescription={h.infoTask}
+                                isFunc={h.isFunc}
+                                funcData={h.funcData}
+                                funcParam={h.funcParam}
+                                correctResultTusk={h.correctResult}/>
                         )
                     })}
                 </FlexWrapper>
-
             </Container>
         </StyledHomeWork>
     );
 };
 
 const StyledHomeWork = styled.section`
-  
-  ${Container}{
+
+  ${Container} {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 30px 0;
-    
+
   }
 
   @media ${theme.media.tablet} {
