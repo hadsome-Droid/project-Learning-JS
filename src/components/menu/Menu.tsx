@@ -1,14 +1,26 @@
 import React from 'react';
 import styled from "styled-components";
 import {theme} from "../../styles/Theme";
+import {NavLink} from "react-router-dom";
 
 export const Menu = () => {
     return (
         <StyledMenu>
             <ul>
-                <li>Пункт меню 1</li>
-                <li>ДЗ/HomeWork</li>
-                <li>Пункт меню 3</li>
+                <li>
+                    <NavLink to={'/main'}>
+                        Холл
+                    </NavLink></li>
+                <li>
+                    <NavLink to={'/homeWork'}>
+                        ДЗ/HomeWork
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to={'/manual'}>
+                      Мануал
+                    </NavLink>
+                </li>
                 <li>Пункт меню 4</li>
             </ul>
         </StyledMenu>
