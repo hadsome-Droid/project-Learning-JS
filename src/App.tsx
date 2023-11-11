@@ -5,6 +5,7 @@ import {Manual} from "./layout/sections/manual/Manual";
 import {Footer} from "./layout/footer/Footer";
 import {HomeWork} from "./layout/sections/homework/HomeWork";
 import {Navigate, Route, Routes} from "react-router-dom";
+import {Error404} from "./components/Error";
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
                 <Route path={'/main'} element={<Main/>}/>
                 <Route path={'/homeWork'} element={<HomeWork/>}/>
                 <Route path={'/manual'} element={<Manual/>}/>
+                <Route path={'/error'} element={<Error404/>}/>
+                <Route path={'/*'} element={<Navigate to={'/error'}/> }/>
             </Routes>
 
         </div>
