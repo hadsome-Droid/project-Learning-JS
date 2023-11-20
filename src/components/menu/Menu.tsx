@@ -10,7 +10,8 @@ export const Menu = () => {
                 <li>
                     <NavLink to={'/main'}>
                         Холл
-                    </NavLink></li>
+                    </NavLink>
+                </li>
                 <li>
                     <NavLink to={'/homeWork'}>
                         ДЗ/HomeWork
